@@ -1,0 +1,61 @@
+# =============================================================================
+# DEPLOY AUTOMATICO - CLOUDFLARE PAGES (PulseBase Landing)
+# =============================================================================
+#
+# COMO USAR:
+#   1. Commit suas mudancas: git add -A && git commit -m "feat: ..."
+#   2. Push pro main: git push origin main
+#   3. Crie a tag: git tag pulse-v0.1.0  (use semver: major.minor.patch)
+#   4. Push da tag: git push origin pulse-v0.1.0
+#   5. Acompanhe em: https://github.com/mentoringbase/pulsebase-landing/actions
+#
+# CUIDADO:
+#   - Tag criada = Deploy automatico = Em producao!
+#   - Sempre teste local (npm run dev) antes de criar tag
+#   - Use versoes incrementais (v0.1.0 -> v0.1.1 -> v0.2.0)
+#
+# SECRETS NECESSARIOS (configurar no GitHub):
+#   - CLOUDFLARE_API_TOKEN
+#   - CLOUDFLARE_ACCOUNT_ID
+#
+# CLOUDFLARE PAGES PROJECT NAME: pulsebase-landing
+# PRODUCAO: https://pulse.mentoringbase.com (apos custom domain configurado)
+# =============================================================================
+
+name: Deploy to Cloudflare Pages
+
+on:
+  push:
+    tags:
+      - 'pulse-v*.*.*'  # Dispara apenas em tags: pulse-v0.1.0, pulse-v1.2.3, etc.
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      deployments: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=pulsebase-landing --branch=main
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}

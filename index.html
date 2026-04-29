@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://pulse.mentoringbase.com/" />
+
+    <!-- SEO -->
+    <title>PulseBase — Visibilidade total do seu grupo de mentoria</title>
+    <meta name="description" content="PulseBase entra no seu grupo de WhatsApp, observa silenciosamente, e todo dia entrega um PDF com tudo que voce precisa saber. Health score, ghosts, temas, sentimento. Zero leitura manual." />
+    <meta name="keywords" content="grupo whatsapp, mentoria, resumo automatico, IA, pulsebase, mentoringbase, MRM, gestao de grupo" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="PulseBase — Saiba o que acontece no seu grupo sem ler uma mensagem" />
+    <meta property="og:description" content="Bot silencioso. Resumo diario por IA. PDF entregue no seu WhatsApp toda manha. Powered by MentoringBase." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://pulse.mentoringbase.com/" />
+    <meta property="og:image" content="https://pulse.mentoringbase.com/og-image.png" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PulseBase — Visibilidade total do seu grupo de mentoria" />
+    <meta name="twitter:description" content="Bot silencioso. Resumo diario por IA. PDF entregue no seu WhatsApp toda manha." />
+    <meta name="twitter:image" content="https://pulse.mentoringbase.com/og-image.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "@id": "https://pulse.mentoringbase.com/#organization",
+          "name": "PulseBase",
+          "alternateName": ["Pulse Base", "PulseBase by MentoringBase"],
+          "url": "https://pulse.mentoringbase.com",
+          "logo": "https://pulse.mentoringbase.com/logo.png",
+          "description": "PulseBase e um bot que entra no grupo de WhatsApp do mentor, observa silenciosamente, e entrega resumos inteligentes via PDF.",
+          "areaServed": { "@type": "Country", "name": "Brasil" },
+          "knowsLanguage": ["pt-BR"],
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "MentoringBase",
+            "url": "https://mentoringbase.com"
+          },
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "suporte@mentoringbase.com",
+            "contactType": "customer support",
+            "availableLanguage": "Portuguese"
+          }
+        },
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://pulse.mentoringbase.com/#software",
+          "name": "PulseBase",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web, WhatsApp",
+          "url": "https://pulse.mentoringbase.com",
+          "description": "Bot silencioso que monitora grupos de WhatsApp e entrega resumos diarios em PDF via DM. Inclui health score, deteccao de ghosts, ranking de engajamento e sentiment.",
+          "publisher": {"@id": "https://pulse.mentoringbase.com/#organization"}
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://pulse.mentoringbase.com/#website",
+          "url": "https://pulse.mentoringbase.com",
+          "name": "PulseBase",
+          "description": "Visibilidade total do seu grupo de mentoria sem ler uma mensagem.",
+          "publisher": {"@id": "https://pulse.mentoringbase.com/#organization"}
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-black text-white antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
