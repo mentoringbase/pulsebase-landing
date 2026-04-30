@@ -175,12 +175,12 @@ function App() {
     {
       question: 'Quanto custa?',
       answer:
-        'R$79/mês por grupo monitorado. Sem letra miúda — esse é o preço cheio. Você começa com 30 dias grátis pra testar tudo, sem cobrança. Pedimos o cartão na ativação pra você não precisar voltar pra finalizar — se decidir não continuar antes do 31º dia, é só cancelar e nada é cobrado. Quer ver funcionando antes? Agende uma demo de 15 minutos com o time — é opcional.',
+        'R$79/mês por grupo monitorado. Sem letra miúda — esse é o preço cheio. Primeiro mês grátis pra testar, sem cobrança e sem cartão na ativação. Você só passa a pagar a partir do segundo mês, se quiser continuar. Pra mentor que cobra R$50k+ por programa, R$79/mês é menos de 0,2% do ticket de um único mentorado — investimento trivial pra quem cuida de turma high-ticket.',
     },
     {
       question: 'Funciona em grupos de quantos membros?',
       answer:
-        'De 10 a 1.000+ membros. Quanto maior o grupo, mais valor o PulseBase entrega — porque ler manualmente vira impossível. Grupos de 50 a 300 membros são o sweet spot: volume suficiente pra gerar ghosts e temas relevantes, sem complexidade extra.',
+        'De 5 a 1.000+ membros. Sweet spot pra mentor profissional com turma high-ticket: 5 a 50 mentorados em programa estruturado de 3-12 meses. Volume suficiente pra ghosts e padrões emergirem, intimidade suficiente pra você agir individualmente quando algo aparece no PDF. Comunidades maiores (50-300+) também funcionam — só dão signals diferentes (mais ranking de top, menos retenção 1-a-1).',
     },
     {
       question: 'Preciso instalar alguma coisa? Configurar técnico?',
@@ -257,14 +257,15 @@ function App() {
               className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6"
               variants={fadeInUp}
             >
-              Visibilidade total do seu grupo de mentoria{' '}
-              <span className="text-gradient">sem ler uma mensagem sequer.</span>
+              Sua turma high-ticket merece visibilidade que planilha não dá.{' '}
+              <span className="text-gradient">Sem ler uma mensagem sequer.</span>
             </motion.h1>
 
             <motion.p className="text-xl text-muted mb-4 max-w-2xl" variants={fadeInUp}>
-              O <strong className="text-white">PulseBase</strong> entra no seu grupo de WhatsApp,
-              observa silenciosamente, e toda manhã entrega um PDF com tudo que você precisa saber:
-              quem participou, quem sumiu, o que rolou, e o que fazer.
+              Pra mentor profissional que cobra R$50k+ por programa e tem 5 a 50 mentorados
+              em grupo de WhatsApp. O <strong className="text-white">PulseBase</strong> observa
+              silenciosamente e toda manhã entrega um PDF com quem participou, quem sumiu,
+              o que rolou, e o que fazer.
             </motion.p>
 
             <motion.p className="text-lg text-white/80 mb-8" variants={fadeInUp}>
