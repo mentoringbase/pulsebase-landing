@@ -175,7 +175,7 @@ function App() {
     {
       question: 'Quanto custa?',
       answer:
-        'R$79/mês por grupo monitorado. Sem letra miúda — esse é o preço cheio. Primeiro mês grátis pra testar, sem cobrança e sem cartão na ativação. Você só passa a pagar a partir do segundo mês, se quiser continuar. Pra mentor que cobra R$50k+ por programa, R$79/mês é menos de 0,2% do ticket de um único mentorado — investimento trivial pra quem cuida de turma high-ticket.',
+        'R$79/mês por grupo monitorado. Sem letra miúda — esse é o preço cheio. 30 dias grátis pra testar tudo, sem cobrança. Pedimos o cartão na ativação pra você não precisar voltar pra finalizar — se decidir não continuar antes do 31º dia, é só cancelar e nada é cobrado. Pra mentor que cobra R$50k+ por programa, R$79/mês é menos de 0,2% do ticket de um único mentorado — investimento trivial pra quem cuida de turma high-ticket.',
     },
     {
       question: 'Funciona em grupos de quantos membros?',
