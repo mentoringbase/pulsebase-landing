@@ -1,5 +1,4 @@
-import { useState, useEffect } from 'react'
-import { getCalApi } from '@calcom/embed-react'
+import { useState } from 'react'
 import { motion } from 'framer-motion'
 import {
   Activity,
@@ -67,18 +66,6 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 }
 
 function App() {
-  // Cal.com inicializa via getCalApi (Promise — nunca falha com "not defined")
-  useEffect(() => {
-    ;(async () => {
-      const cal = await getCalApi({ namespace: 'demo' })
-      cal('ui', {
-        theme: 'dark',
-        styles: { branding: { brandColor: '#3D6B42' } },
-        hideEventTypeDetails: false,
-      })
-    })()
-  }, [])
-
   const howSteps = [
     {
       step: '1',
