@@ -175,7 +175,7 @@ function App() {
     {
       question: 'Quanto custa?',
       answer:
-        'R$79/mês por grupo monitorado. Sem letra miúda — esse é o preço cheio. Você começa com o primeiro mês grátis (não pedimos cartão na ativação) e só passa a pagar a partir do segundo mês, se quiser continuar. Quer ver funcionando antes? Agende uma demo de 15 minutos com o time — é opcional, mas ajuda a esclarecer dúvidas.',
+        'R$79/mês por grupo monitorado. Sem letra miúda — esse é o preço cheio. Você começa com 30 dias grátis pra testar tudo, sem cobrança. Pedimos o cartão na ativação pra você não precisar voltar pra finalizar — se decidir não continuar antes do 31º dia, é só cancelar e nada é cobrado. Quer ver funcionando antes? Agende uma demo de 15 minutos com o time — é opcional.',
     },
     {
       question: 'Funciona em grupos de quantos membros?',
@@ -622,8 +622,9 @@ function App() {
               Pronto pra ver o que acontece no seu grupo?
             </h2>
             <p className="text-muted text-lg mb-8">
-              Comece em 5 minutos. Primeiro mês grátis, sem cartão. R$79/mês depois — ou agende
-              uma demo de 15 min se preferir ver funcionando antes.
+              Comece em 5 minutos. 30 dias grátis pra testar (cartão na ativação, cancele antes do
+              31º dia e nada é cobrado). R$79/mês depois — ou agende uma demo de 15 min se preferir
+              ver funcionando antes.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
