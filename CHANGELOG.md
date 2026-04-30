@@ -23,3 +23,21 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 - Configurar secrets `CLOUDFLARE_API_TOKEN` + `CLOUDFLARE_ACCOUNT_ID` no GitHub repo.
 - Substituir `logo.png`/`favicon.png` placeholders pelos assets oficiais do PulseBase.
 - Criar tag `pulse-v0.1.0` para disparar primeiro deploy.
+
+### Planned — D5: Variacoes por ICP (BLOQUEADO em PB-LEADS + Stripe + post-purchase)
+> Diretiva CEO via Telegram 2026-04-30 03:10 SP (Matrix task `89b9e78e`).
+> Copy atual e boa pra mentoria, mas pulsebase tem ICPs mais amplos. Executar APOS finalizar PB-LEADS + Stripe checkout + post-purchase flow.
+
+ICPs alvo (ordem de prioridade):
+1. **Lancamentos** — "paga melhor" (CEO) — PRIMEIRA variante a ser feita.
+2. **Comunidades**.
+3. **Grupos de estudo**.
+
+Plano de execucao:
+1. Extrair sections do `App.tsx` (780 linhas, single-page) pra `components/` reusaveis: `Hero`, `HowItWorks`, `WhatYouSee`, `Comparativo`, `Trust`, `FAQ`, `FinalCTA`.
+2. Criar variantes por rota (`/lancamentos`, `/comunidades`, `/estudos`) ou query string (`?icp=lancamento|comunidade|estudo`). Decisao a tomar com base em SEO vs simplicidade — provavelmente rotas dedicadas por SEO/ads.
+3. Cada variante recebe: hero adaptado, dores especificas do ICP, casos de uso proprios, FAQ ajustada.
+4. UTM tracking por ICP pra metricas (separar funil de cada nicho).
+5. Coordenar copy de cada ICP com Melissa (Diretora) + MUSKITO (Head Mkt).
+
+Esforco estimado: ~1d por variante. Comecar por **lancamentos**.
