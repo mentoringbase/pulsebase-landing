@@ -230,7 +230,7 @@ function App() {
           </div>
           <div className="flex items-center gap-3">
             <Button size="sm" asChild>
-              <a href="#demo">Agendar demo</a>
+              <a href="https://pulsebase.mentoringbase.com/signup">Começar grátis</a>
             </Button>
           </div>
         </div>
@@ -276,8 +276,8 @@ function App() {
 
             <motion.div className="flex flex-col sm:flex-row gap-4 mb-8" variants={fadeInUp}>
               <Button size="lg" asChild>
-                <a href="#demo">
-                  Agendar demo de 15 min
+                <a href="https://pulsebase.mentoringbase.com/signup">
+                  Começar grátis (30 dias)
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
@@ -597,9 +597,9 @@ function App() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            <p className="text-muted mb-4">Ainda tem dúvidas?</p>
+            <p className="text-muted mb-4">Pronto pra começar?</p>
             <Button variant="outline" asChild>
-              <a href="#demo">Fale com a gente</a>
+              <a href="https://pulsebase.mentoringbase.com/signup">Começar grátis (30 dias)</a>
             </Button>
           </motion.div>
         </div>
@@ -616,7 +616,7 @@ function App() {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand/10 border border-brand/20 mb-6">
               <Sparkles className="h-4 w-4 text-brand" />
-              <span className="text-sm text-brand font-medium">Demo de 15 minutos</span>
+              <span className="text-sm text-brand font-medium">30 dias grátis</span>
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
@@ -624,28 +624,14 @@ function App() {
             </h2>
             <p className="text-muted text-lg mb-8">
               Comece em 5 minutos. 30 dias grátis pra testar (cartão na ativação, cancele antes do
-              31º dia e nada é cobrado). R$79/mês depois — ou agende uma demo de 15 min se preferir
-              ver funcionando antes.
+              31º dia e nada é cobrado). R$79/mês depois.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <Button size="lg" asChild>
-                <a
-                  href="https://cal.com/mentoringbase/demo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Testar grátis 30 dias
+                <a href="https://pulsebase.mentoringbase.com/signup">
+                  Começar grátis (30 dias)
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <a
-                  href="https://cal.com/mentoringbase/demo"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Agendar demo de 15 min
                 </a>
               </Button>
             </div>
@@ -748,8 +734,11 @@ function App() {
                   </a>
                 </li>
                 <li>
-                  <a href="#demo" className="hover:text-white transition-colors">
-                    Agendar demo
+                  <a
+                    href="https://pulsebase.mentoringbase.com/signup"
+                    className="hover:text-white transition-colors"
+                  >
+                    Começar grátis
                   </a>
                 </li>
               </ul>
