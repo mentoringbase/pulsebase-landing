@@ -84,19 +84,19 @@ function App() {
       step: '1',
       icon: Users,
       title: 'Bot entra no grupo',
-      desc: 'Voce adiciona o numero do PulseBase como membro comum do grupo. Em segundos, ele mapeia todos os participantes e comeca a observar.',
+      desc: 'Você adiciona o número do PulseBase como membro comum do grupo. Em segundos, ele mapeia todos os participantes e começa a observar.',
     },
     {
       step: '2',
       icon: EyeOff,
       title: 'Observa silenciosamente',
-      desc: 'O bot nunca envia mensagem no grupo. Nunca interage com seus membros. Apenas escuta — texto, audio (transcrito), reacoes — e organiza tudo.',
+      desc: 'O bot nunca envia mensagem no grupo. Nunca interage com seus membros. Apenas escuta — texto, áudio (transcrito), reações — e organiza tudo.',
     },
     {
       step: '3',
       icon: FileText,
-      title: 'PDF na sua DM toda manha',
-      desc: 'As 7h, um PDF chega no seu WhatsApp. Voce abre, le em 30 segundos, e sabe tudo que aconteceu no grupo no dia anterior.',
+      title: 'PDF na sua DM toda manhã',
+      desc: 'Às 7h, um PDF chega no seu WhatsApp. Você abre, lê em 30 segundos, e sabe tudo que aconteceu no grupo no dia anterior.',
     },
   ]
 
@@ -104,32 +104,32 @@ function App() {
     {
       icon: Activity,
       title: 'Health Score do grupo',
-      desc: 'Um numero de 0 a 100 que resume como o grupo esta. Subindo? Caindo? Voce ve a tendencia em segundos.',
+      desc: 'Um número de 0 a 100 que resume como o grupo está. Subindo? Caindo? Você vê a tendência em segundos.',
     },
     {
       icon: Users,
       title: 'Ranking de engajamento',
-      desc: 'Top 10 mais ativos. Quem puxa a conversa, quem participa, quem so observa. Conheca seus embaixadores.',
+      desc: 'Top 10 mais ativos. Quem puxa a conversa, quem participa, quem só observa. Conheça seus embaixadores.',
     },
     {
       icon: Ghost,
       title: 'Ghosts (quem sumiu)',
-      desc: 'Lista de inativos ha 7, 14 e 30 dias. Pronta pra mandar aquela mensagem de reativacao antes de virar churn.',
+      desc: 'Lista de inativos há 7, 14 e 30 dias. Pronta pra mandar aquela mensagem de reativação antes de virar churn.',
     },
     {
       icon: MessageSquare,
       title: 'Temas dominantes',
-      desc: 'O que o grupo mais discutiu? IA agrupa as conversas em temas e mostra o que esta na mente da galera.',
+      desc: 'O que o grupo mais discutiu? IA agrupa as conversas em temas e mostra o que está na mente da galera.',
     },
     {
       icon: Heart,
       title: 'Sentimento geral',
-      desc: 'O grupo esta animado, frustrado, curioso? Sentiment analysis automatico — saiba o clima sem ler nada.',
+      desc: 'O grupo está animado, frustrado, curioso? Sentiment analysis automático — saiba o clima sem ler nada.',
     },
     {
       icon: AlertTriangle,
-      title: 'Pontos de atencao',
-      desc: 'Conflitos, duvidas recorrentes, oportunidades de conteudo. A IA destaca o que merece sua acao agora.',
+      title: 'Pontos de atenção',
+      desc: 'Conflitos, dúvidas recorrentes, oportunidades de conteúdo. A IA destaca o que merece sua ação agora.',
     },
   ]
 
@@ -141,56 +141,56 @@ function App() {
     },
     {
       task: 'Identificar quem sumiu',
-      manual: 'Quase impossivel — voce esquece',
+      manual: 'Quase impossível — você esquece',
       pulse: 'Lista pronta no PDF',
     },
     {
       task: 'Entender o clima do grupo',
-      manual: 'Sensacao subjetiva',
+      manual: 'Sensação subjetiva',
       pulse: 'Sentiment + health score objetivos',
     },
     {
       task: 'Mapear temas que engajam',
-      manual: 'Achismo — voce lembra do que viu',
+      manual: 'Achismo — você lembra do que viu',
       pulse: 'Temas dominantes destacados pela IA',
     },
     {
-      task: 'Manter consistencia',
+      task: 'Manter consistência',
       manual: 'Cai quando a semana aperta',
-      pulse: 'Chega no WhatsApp todo dia as 7h',
+      pulse: 'Chega no WhatsApp todo dia às 7h',
     },
   ]
 
   const faqs = [
     {
-      question: 'O bot e invasivo? Ele responde no grupo?',
+      question: 'O bot é invasivo? Ele responde no grupo?',
       answer:
-        'Nao. O PulseBase e silencioso por design — ele nunca envia mensagem dentro do grupo, nunca interage com seus membros, nunca aparece. Ele apenas le as mensagens publicas do grupo (igual qualquer membro le) e gera o resumo. Voce pode revogar o acesso a qualquer momento removendo o bot do grupo.',
+        'Não. O PulseBase é silencioso por design — ele nunca envia mensagem dentro do grupo, nunca interage com seus membros, nunca aparece. Ele apenas lê as mensagens públicas do grupo (igual qualquer membro lê) e gera o resumo. Você pode revogar o acesso a qualquer momento removendo o bot do grupo.',
     },
     {
-      question: 'E a LGPD? Como voces tratam os dados?',
+      question: 'E a LGPD? Como vocês tratam os dados?',
       answer:
-        'Os dados ficam isolados por grupo (multi-tenant). So voce, como mentor admin, recebe os PDFs. Nao compartilhamos, nao revendemos, nao usamos pra treinar IA externa. Voce pode pedir delecao completa a qualquer momento. Recomendamos informar seus mentorados que o grupo e monitorado para fins de gestao — boa pratica e exigencia da LGPD.',
+        'Os dados ficam isolados por grupo (multi-tenant). Só você, como mentor admin, recebe os PDFs. Não compartilhamos, não revendemos, não usamos pra treinar IA externa. Você pode pedir deleção completa a qualquer momento. Recomendamos informar seus mentorados que o grupo é monitorado para fins de gestão — boa prática e exigência da LGPD.',
     },
     {
       question: 'Quanto custa?',
       answer:
-        'O PulseBase esta em fase beta com mentores selecionados. O preco-alvo e simples: assinatura mensal por grupo monitorado, com periodo de teste gratuito. Agende uma demo de 15 minutos pra entender se faz sentido pro seu caso — e qual o valor pro seu cenario.',
+        'R$79/mês por grupo monitorado. Sem letra miúda — esse é o preço cheio. Você começa com o primeiro mês grátis (não pedimos cartão na ativação) e só passa a pagar a partir do segundo mês, se quiser continuar. Quer ver funcionando antes? Agende uma demo de 15 minutos com o time — é opcional, mas ajuda a esclarecer dúvidas.',
     },
     {
       question: 'Funciona em grupos de quantos membros?',
       answer:
-        'De 10 a 1.000+ membros. Quanto maior o grupo, mais valor o PulseBase entrega — porque ler manualmente vira impossivel. Grupos de 50 a 300 membros sao o sweet spot: volume suficiente pra gerar ghosts e temas relevantes, sem complexidade extra.',
+        'De 10 a 1.000+ membros. Quanto maior o grupo, mais valor o PulseBase entrega — porque ler manualmente vira impossível. Grupos de 50 a 300 membros são o sweet spot: volume suficiente pra gerar ghosts e temas relevantes, sem complexidade extra.',
     },
     {
-      question: 'Preciso instalar alguma coisa? Configurar tecnico?',
+      question: 'Preciso instalar alguma coisa? Configurar técnico?',
       answer:
-        'Nao. Voce so adiciona o numero do bot no grupo (igual adiciona qualquer membro novo). Em menos de 5 minutos esta funcionando. Sem app, sem integracao, sem TI envolvida.',
+        'Não. Você só adiciona o número do bot no grupo (igual adiciona qualquer membro novo). Em menos de 5 minutos está funcionando. Sem app, sem integração, sem TI envolvida.',
     },
     {
-      question: 'E se eu tiver varios grupos?',
+      question: 'E se eu tiver vários grupos?',
       answer:
-        'Sem problema — adiciona o bot em quantos grupos quiser. Cada grupo gera seu PDF proprio, com branding configuravel (logo, cor, nome). Ideal pra mentores com programas multiplos ou turmas paralelas.',
+        'Sem problema — adiciona o bot em quantos grupos quiser. Cada grupo gera seu PDF próprio, com branding configurável (logo, cor, nome). Ideal pra mentores com programas múltiplos ou turmas paralelas.',
     },
   ]
 
@@ -216,7 +216,7 @@ function App() {
               href="#pdf"
               className="text-sm text-muted hover:text-white transition-colors"
             >
-              O que voce ve
+              O que você vê
             </a>
             <a
               href="#comparativo"
@@ -263,13 +263,13 @@ function App() {
 
             <motion.p className="text-xl text-muted mb-4 max-w-2xl" variants={fadeInUp}>
               O <strong className="text-white">PulseBase</strong> entra no seu grupo de WhatsApp,
-              observa silenciosamente, e toda manha entrega um PDF com tudo que voce precisa saber:
+              observa silenciosamente, e toda manhã entrega um PDF com tudo que você precisa saber:
               quem participou, quem sumiu, o que rolou, e o que fazer.
             </motion.p>
 
             <motion.p className="text-lg text-white/80 mb-8" variants={fadeInUp}>
               <span className="text-brand font-semibold">
-                Voce acorda. Abre o PDF. Sabe tudo em 30 segundos.
+                Você acorda. Abre o PDF. Sabe tudo em 30 segundos.
               </span>
             </motion.p>
 
@@ -319,7 +319,7 @@ function App() {
               Como funciona — em 3 passos
             </h2>
             <p className="text-muted text-lg max-w-2xl mx-auto">
-              Voce nao instala nada. Nao configura tecnico. Em menos de 5 minutos esta rodando.
+              Você não instala nada. Não configura técnico. Em menos de 5 minutos está rodando.
             </p>
           </motion.div>
 
@@ -364,10 +364,10 @@ function App() {
               <span className="text-sm text-brand font-medium">O PDF que chega na sua DM</span>
             </div>
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-              Tudo que importa do seu grupo, em uma pagina
+              Tudo que importa do seu grupo, em uma página
             </h2>
             <p className="text-muted text-lg max-w-2xl mx-auto">
-              Nada de dashboard pra ficar abrindo. PDF chega no WhatsApp, voce abre no celular,
+              Nada de dashboard pra ficar abrindo. PDF chega no WhatsApp, você abre no celular,
               entende em 30 segundos.
             </p>
           </motion.div>
@@ -425,7 +425,7 @@ function App() {
                   24<span className="text-base text-muted">/38</span>
                 </p>
                 <p className="text-xs text-muted mt-1">Ativos</p>
-                <p className="text-xs text-brand mt-0.5">63% participacao</p>
+                <p className="text-xs text-brand mt-0.5">63% participação</p>
               </div>
               <div className="bg-surface-light rounded-xl p-4">
                 <p className="text-2xl font-extrabold text-white">8</p>
@@ -439,9 +439,9 @@ function App() {
                 Resumo da IA
               </p>
               <ul className="space-y-1.5 text-sm text-muted">
-                <li>▸ Tema dominante: preparacao pra masterclass de quinta-feira.</li>
-                <li>▸ Ana compartilhou framework de prospeccao — 31 respostas.</li>
-                <li>▸ 3 novos membros essa semana. 8 inativos ha mais de 7 dias.</li>
+                <li>▸ Tema dominante: preparação pra masterclass de quinta-feira.</li>
+                <li>▸ Ana compartilhou framework de prospecção — 31 respostas.</li>
+                <li>▸ 3 novos membros essa semana. 8 inativos há mais de 7 dias.</li>
                 <li>▸ Sentimento: animado · Pico de atividade: 20h-22h.</li>
               </ul>
             </div>
@@ -463,7 +463,7 @@ function App() {
               <span className="text-gradient">PulseBase</span>
             </h2>
             <p className="text-muted text-lg max-w-2xl mx-auto">
-              A pergunta nao e "vale a pena automatizar?". E "quanto tempo voce ja perdeu?".
+              A pergunta não é "vale a pena automatizar?". É "quanto tempo você já perdeu?".
             </p>
           </motion.div>
 
@@ -521,7 +521,7 @@ function App() {
           >
             <p className="text-muted">
               <Clock className="inline h-4 w-4 mr-1 text-brand" />
-              Mentor que abandona o grupo perde retencao. Mentor que ve o grupo todo dia, renova.
+              Mentor que abandona o grupo perde retenção. Mentor que vê o grupo todo dia, renova.
             </p>
           </motion.div>
         </div>
@@ -540,9 +540,9 @@ function App() {
               <div className="h-14 w-14 rounded-full bg-brand/10 flex items-center justify-center mx-auto mb-4">
                 <EyeOff className="h-7 w-7 text-brand" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Zero intrusao</h3>
+              <h3 className="text-lg font-semibold text-white mb-2">Zero intrusão</h3>
               <p className="text-muted text-sm">
-                Bot nunca envia mensagem no grupo. Nunca interage. So escuta e te avisa por DM.
+                Bot nunca envia mensagem no grupo. Nunca interage. Só escuta e te avisa por DM.
               </p>
             </div>
             <div className="text-center">
@@ -551,16 +551,16 @@ function App() {
               </div>
               <h3 className="text-lg font-semibold text-white mb-2">Dados isolados</h3>
               <p className="text-muted text-sm">
-                Multi-tenant por grupo. Nao revendemos, nao treinamos IA externa com seus dados.
+                Multi-tenant por grupo. Não revendemos, não treinamos IA externa com seus dados.
               </p>
             </div>
             <div className="text-center">
               <div className="h-14 w-14 rounded-full bg-brand/10 flex items-center justify-center mx-auto mb-4">
                 <ChevronRight className="h-7 w-7 text-brand" />
               </div>
-              <h3 className="text-lg font-semibold text-white mb-2">Reversivel</h3>
+              <h3 className="text-lg font-semibold text-white mb-2">Reversível</h3>
               <p className="text-muted text-sm">
-                Quer parar? Remove o bot do grupo. Pede delecao dos dados. Em segundos.
+                Quer parar? Remove o bot do grupo. Pede deleção dos dados. Em segundos.
               </p>
             </div>
           </motion.div>
@@ -577,7 +577,7 @@ function App() {
             viewport={{ once: true }}
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Perguntas frequentes</h2>
-            <p className="text-muted text-lg">As duvidas mais comuns dos mentores que avaliam o PulseBase.</p>
+            <p className="text-muted text-lg">As dúvidas mais comuns dos mentores que avaliam o PulseBase.</p>
           </motion.div>
 
           <motion.div
@@ -596,7 +596,7 @@ function App() {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
           >
-            <p className="text-muted mb-4">Ainda tem duvidas?</p>
+            <p className="text-muted mb-4">Ainda tem dúvidas?</p>
             <Button variant="outline" asChild>
               <a href="#demo">Fale com a gente</a>
             </Button>
@@ -622,26 +622,28 @@ function App() {
               Pronto pra ver o que acontece no seu grupo?
             </h2>
             <p className="text-muted text-lg mb-8">
-              Configure em 5 minutos. Primeiro PDF amanha as 7h. Sem compromisso, sem cartao.
+              Comece em 5 minutos. Primeiro mês grátis, sem cartão. R$79/mês depois — ou agende
+              uma demo de 15 min se preferir ver funcionando antes.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <button
-                data-cal-namespace="demo"
-                data-cal-link="mentoringbase/demo"
-                data-cal-config='{"layout":"month_view"}'
-                className="inline-flex items-center justify-center gap-2 h-14 px-8 rounded-lg bg-brand text-white text-base font-medium hover:bg-brand-light transition-colors"
-              >
-                Agendar demo agora
-                <ArrowRight className="h-5 w-5" />
-              </button>
+              <Button size="lg" asChild>
+                <a
+                  href="https://cal.com/mentoringbase/demo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Testar grátis 30 dias
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
               <Button size="lg" variant="outline" asChild>
                 <a
                   href="https://cal.com/mentoringbase/demo"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Abrir agenda em nova aba
+                  Agendar demo de 15 min
                 </a>
               </Button>
             </div>
@@ -649,15 +651,15 @@ function App() {
             <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted">
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-brand" />
-                <span>15 minutos</span>
+                <span>1º mês grátis</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-brand" />
-                <span>Sem compromisso</span>
+                <span>Sem cartão na ativação</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4 text-brand" />
-                <span>Demo ao vivo do PDF</span>
+                <span>R$79/mês depois</span>
               </div>
             </div>
           </motion.div>
@@ -690,7 +692,7 @@ function App() {
                 </li>
                 <li>
                   <a href="#pdf" className="hover:text-white transition-colors">
-                    O que voce ve
+                    O que você vê
                   </a>
                 </li>
                 <li>
@@ -707,7 +709,7 @@ function App() {
             </div>
 
             <div>
-              <h4 className="font-medium text-white mb-4">Familia MentoringBase</h4>
+              <h4 className="font-medium text-white mb-4">Família MentoringBase</h4>
               <ul className="space-y-2 text-sm text-muted">
                 <li>
                   <a
