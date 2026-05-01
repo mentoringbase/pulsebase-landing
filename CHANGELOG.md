@@ -8,6 +8,7 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.0/).
 ## [Unreleased]
 
 ### Added
+- feat(footer): adiciona CTA WhatsApp +55 16 99268-5115 (Marcela) — linha na coluna "Contato" existente, com ícone MessageSquare e link wa.me com UTM text pré-preenchido
 - Scaffold inicial do repo, espelhando padrao do `site-mentoring` (Vite + React + TS + Tailwind 3.4 + Framer Motion).
 - `App.tsx` com landing single-page em PT-BR: Hero, How it Works (3 passos), What you see in the PDF (6 cards + mockup de metricas), Comparativo (PulseBase vs ler tudo manual), Trust (zero intrusao + dados isolados + reversivel), FAQ (6 perguntas: invasivo, LGPD, preco, tamanho do grupo, instalacao, varios grupos), Final CTA (Cal.com embed).
 - Componentes UI: Button + Input (shadcn-like).

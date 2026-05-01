@@ -722,6 +722,18 @@ function App() {
                 </li>
                 <li>
                   <a
+                    href="https://wa.me/5516992685115?text=Ol%C3%A1%2C%20vim%20do%20site"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Falar no WhatsApp"
+                    className="hover:text-white transition-colors flex items-center gap-1.5"
+                  >
+                    <MessageSquare className="h-4 w-4 shrink-0" />
+                    WhatsApp (16) 99268-5115
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="https://pulsebase.mentoringbase.com/signup"
                     className="hover:text-white transition-colors"
                   >
